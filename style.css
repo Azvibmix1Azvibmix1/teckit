@@ -1,0 +1,51 @@
+/* style.css - التحديث الجديد */
+:root {
+    --primary: #0056b3;
+    --success: #28a745;   /* للحل */
+    --warning: #ffc107;   /* للتعليق */
+    --danger: #dc3545;    /* للإلغاء */
+    --purple: #6f42c1;    /* للتصعيد */
+    --bg-body: #e9ecef;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-body);
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+/* ... (نفس تنسيقات الدخول والبطاقات السابقة) ... */
+.login-wrapper { height: 100vh; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, var(--primary), #343a40); }
+.login-box { background: white; padding: 40px; border-radius: 10px; width: 100%; max-width: 400px; text-align: center; }
+.main-container { padding: 20px; max-width: 1200px; margin: 0 auto; }
+.header { background: white; padding: 15px 25px; border-radius: 8px; margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center; }
+.card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.form-control { width: 100%; padding: 10px; border: 1px solid #ced4da; border-radius: 4px; box-sizing: border-box; margin-bottom: 10px; }
+
+/* --- تنسيق الأزرار الجديد --- */
+.btn { padding: 8px 12px; border: none; border-radius: 4px; cursor: pointer; color: white; font-weight: bold; font-size: 0.85rem; margin-left: 5px; transition: 0.2s; }
+.btn:hover { opacity: 0.9; transform: scale(1.02); }
+
+/* ألوان الأزرار الخاصة بالعمليات */
+.btn-solve { background-color: var(--success); }      /* أخضر */
+.btn-escalate { background-color: var(--purple); }    /* بنفسجي */
+.btn-suspend { background-color: var(--warning); color: #333; } /* أصفر */
+.btn-cancel { background-color: var(--danger); }      /* أحمر */
+.btn-primary { background-color: var(--primary); }
+
+/* --- ألوان شارات الحالة (Status Badges) --- */
+.badge { padding: 5px 10px; border-radius: 15px; font-size: 0.8rem; color: white; display: inline-block; min-width: 60px; text-align: center;}
+
+/* حالات التذكرة */
+.status-new { background-color: #17a2b8; }           /* جديد - سماوي */
+.status-solved { background-color: var(--success); }  /* محلول - أخضر */
+.status-escalated { background-color: var(--purple); }/* مصعد - بنفسجي */
+.status-suspended { background-color: var(--warning); color: #333; } /* معلق - أصفر */
+.status-cancelled { background-color: var(--danger); }/* ملغي - أحمر */
+
+/* الجدول */
+table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+th, td { padding: 12px; text-align: right; border-bottom: 1px solid #eee; vertical-align: middle; }
+th { background-color: #f8f9fa; color: #555; }
